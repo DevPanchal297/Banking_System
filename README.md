@@ -8,6 +8,15 @@ A simple console-based banking system built with C# and .NET 8. This project dem
 - Deposit and withdraw funds
 - Basic analytics (account balance ranges, sorting)
 
+## Concepts Used
+- **Generics**: The `Repository<T>` class uses generics to provide type-safe data storage and retrieval.
+- **Interfaces**: The `IRepository<T>` interface defines a contract for repository operations.
+- **Delegates & Events**: The `BankAccount` class uses a delegate (`TransactionHandler`) and an event (`OnTransaction`) to notify about transactions.
+- **LINQ**: Used for querying and analytics on account collections (e.g., sorting, filtering, counting).
+- **Lambda Expressions**: Used in LINQ queries and repository methods for concise function definitions.
+- **Exception Handling**: Input validation and error messages for user interactions.
+- **Object-Oriented Principles**: Encapsulation, abstraction, and separation of concerns are demonstrated throughout the codebase.
+
 ## Project Structure
 - `BankAccount.cs`: Represents a bank account
 - `Repository.cs` / `IRepository.cs`: Generic repository pattern for data storage
